@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jay Limbach Bhojnalay</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="jitulogo.jpeg" alt="Jay Limbach Bhojnalay Logo">
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#order">Order</a>
+    <a href="#payment">Payment</a>
+    <a href="#location">Location</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <h1 id="hero-title">Jay Limbach Bhojnalay</h1>
+    <p>Fresh, homely and delicious meals served daily — Limbach, Gujarat</p>
+    <a class="btn" href="#order">Order Now</a>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" style="margin-top:22px;">
+    <h2>Our Menu</h2>
+
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <h3>🍽 Gujarati / Thali</h3>
+        <ul>
+          <li>🍛 Rotli Shak + Chaas <span class="price">₹70</span></li>
+          <li>🫓 Parotha Shak <span class="price">₹70</span></li>
+          <li>🔥 Dal Baati + Chaas + Chutney + Ghee + Gud <span class="price">₹120</span></li>
+          <li>🍲 Poori Shak <span class="price">₹40</span></li>
+          <li>🍚 Dal Bhat <span class="price">₹40</span></li>
+          <li>🥗 Sabji Bhat <span class="price">₹50</span></li>
+          <li>🥣 Dal Bati + Chaas + Chutney <span class="price">₹80</span></li>
+        </ul>
+        <hr>
+        <h4>Extras</h4>
+        <ul>
+          <li>🫓 Extra Rotli — ₹7</li>
+          <li>🫓 Extra Paratha — ₹15</li>
+          <li>🥯 Extra Bati — ₹10</li>
+          <li>🥤 Extra Chaas — ₹10</li>
+          <li>🍘 Extra Puri (2) — ₹10</li>
+          <li>🧈 Butter Paratha — ₹25</li>
+          <li>🧈 Butter Rotli — ₹15</li>
+        </ul>
+      </div>
+
+      <div class="menu-card">
+        <h3>🧀 Punjabi</h3>
+        <ul>
+          <li>🧀 Paneer Tikka <span class="price">₹110</span></li>
+          <li>🍽 Paneer Bhurji <span class="price">₹100</span></li>
+          <li>🧅 Paneer Mutter <span class="price">₹90</span></li>
+          <li>🌿 Paneer Palak <span class="price">₹90</span></li>
+          <li>🥣 Dal Fry <span class="price">₹50</span></li>
+          <li>🫘 Chana Masala <span class="price">₹60</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-card">
+        <h3>🍟 Fast Food</h3>
+        <ul>
+          <li>🍞 Pav Bhaji <span class="price">₹80</span></li>
+          <li>🍽 Pulao <span class="price">₹70</span></li>
+          <li>🫓 Chole Puri <span class="price">₹50</span></li>
+          <li>🍛 Chole Bhature <span class="price">₹60</span></li>
+          <li>🍚 Jeera Rice <span class="price">₹50</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order" style="margin-top:24px;">
+    <h2>Place Online Order</h2>
+    <div class="box">
+      <form id="orderForm" autocomplete="off">
+
+        <input id="custName" placeholder="Your name / નામ" required>
+        <input id="custPhone" placeholder="Phone number / ફોન" required>
+
+        <label class="small">Choose item</label>
+        <select id="orderItem" required>
+          <option>Rotli Shak + Chaas — ₹70</option>
+          <option>Parotha Shak — ₹70</option>
+          <option>Dal Baati + Chaas + Chutney + Ghee + Gud — ₹120</option>
+          <option>Poori Shak — ₹40</option>
+          <option>Dal Bhat — ₹40</option>
+          <option>Sabji Bhat — ₹50</option>
+          <option>Dal Bati + Chaas + Chutney — ₹80</option>
+        </select>
+
+        <div class="flex">
+          <input id="orderQty" type="number" min="1" placeholder="Quantity" required>
+          <select id="orderTime">
+            <option>12:00 PM</option>
+            <option>1:00 PM</option>
+            <option>7:00 PM</option>
+            <option>8:00 PM</option>
+          </select>
+        </div>
+
+        <textarea id="orderNote" placeholder="Extra notes (optional)"></textarea>
+
+        <label><input type="radio" name="payment" value="Cash on Delivery" checked> COD</label><br>
+        <label><input type="radio" name="payment" value="UPI Payment"> UPI</label>
+
+        <div id="upiInfo">
+          <strong>UPI ID:</strong> bhavartparmarbhavarlal-1@oksbi
+        </div>
+
+        <button type="submit" class="btn">Send Order via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<a class="call-btn" href="tel:+918469217638"></a>
+<a class="wa-btn" href="https://wa.me/918469217638"></a>
+
+<footer>
+  © 2025 Jay Limbach Bhojnalay — +91 84692 17638
+</footer>
+
+<!-- External JS -->
+<script src="script.js"></script>
+</body>
+</html>
